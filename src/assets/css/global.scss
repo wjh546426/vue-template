@@ -1,0 +1,30 @@
+/* global.css */
+@import 'reset.css';
+@import 'font.css';
+@import 'transition.css';
+
+#app {
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+.el-table {
+
+  // 防止应为el-button默认padding将表格高度撑开
+  .el-button {
+    padding: initial;
+  }
+}
+
+.el-dialog {
+  // editor-form类样式用于处理表单中显示样式异常
+  .editor-form {
+    .el-select, .el-date-editor {
+      width: 100%;
+    }
+  }
+}
+
+
